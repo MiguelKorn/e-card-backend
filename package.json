@@ -1,0 +1,32 @@
+{
+  "name": "e-card-backend",
+  "version": "1.0.0",
+  "description": "Backend E-Card System",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelKorn/e-card-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelKorn/e-card-backend/issues"
+  },
+  "homepage": "https://github.com/MiguelKorn/e-card-backend#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "method-override": "latest",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39"
+  }
+}

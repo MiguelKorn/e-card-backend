@@ -13,7 +13,6 @@ module.exports = function() {
     var app = express();
 
     if (process.env.NODE_ENV === 'development') {
-        /** hier gaan we straks specifieke development middleware koppelen (bijvoorbeeld een logger) */
         app.use(morgan('dev'));
     } else if (process.env.NODE_ENV === 'production') {
         /** hier gaan we straks specifieke productie middleware koppelen (bijvoorbeeld compressie) */
@@ -56,8 +55,8 @@ module.exports = function() {
     /**
      * include all routing configuration
      */
-    require('../routes/planner.routes.js')(app);
-    require('../routes/user.routes.js')(app);
+    require('../routes/card.routes')(app);
+    require('../routes/part.routes')(app);
 
     // export the express app
     return app;

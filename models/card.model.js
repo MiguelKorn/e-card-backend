@@ -1,10 +1,17 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+/**
+ * Model for Cards
+ */
+const mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 const CardSchema = new Schema({
-
+    name: {type: String},
+    parts: [{
+        type: {type: String, lowercase: true},
+        name: {type: String, lowercase: true},
+        posX: {type: Number},
+        posY: {type: Number}
+    }]
 });
 
-const Card = mongoose.model('Card', CardSchema);
-
-module.exports = Card;
+mongoose.model('Card', CardSchema);

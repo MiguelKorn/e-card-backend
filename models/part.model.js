@@ -1,15 +1,15 @@
 /**
- * Model for Options
+ * Model for Parts
  */
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-var OptionSchema = new Schema({
-    type: {type: String},
-    parts: [{
-        name: {type: String},
+var PartSchema = new Schema({
+    type: {type: String, lowercase: true},
+    items: [{
+        name: {type: String, lowercase: true},
         image: {type: String}
     }]
 });
 
-mongoose.model('Option', OptionSchema);
+mongoose.model('Part', PartSchema);

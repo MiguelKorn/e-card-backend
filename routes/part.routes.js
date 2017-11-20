@@ -1,6 +1,6 @@
-var option = require('../controllers/option.controller');
+var part = require('../controllers/part.controller');
 
 module.exports = function (app) {
-    app.route('/options')
-        .get(option.list);
+    app.route('/parts')
+        .get(part.list);
 };
