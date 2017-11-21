@@ -9,8 +9,9 @@ const CardSchema = new Schema({
     parts: [{
         type: {type: String, lowercase: true},
         name: {type: String, lowercase: true},
-        posX: {type: Number},
-        posY: {type: Number}
+        image: {type: String},
+        x: {type: Number},
+        y: {type: Number}
     }]
 });
 

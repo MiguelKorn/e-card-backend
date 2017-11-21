@@ -43,7 +43,7 @@ module.exports = function() {
     }));
 
     /**
-     * add json middleware as body parser
+     * save json middleware as body parser
      */
     app.use(bodyParser.json());
 
